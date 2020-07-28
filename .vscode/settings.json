@@ -3,5 +3,6 @@
 		"D:/unreal practise/SimpleShooter/.vscode": true,
 		"D:/unreal practise/SimpleShooter/Content": true,
 		"D:/unreal practise/SimpleShooter/Intermediate": true
-	}
+	},
+	"C_Cpp.errorSquiggles": "Disabled"
 }
