@@ -24,6 +24,8 @@ protected:
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor *DamageCauser) override;
 
 public:	
+	UFUNCTION(BlueprintPure)
+	bool IsDead() const;
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
