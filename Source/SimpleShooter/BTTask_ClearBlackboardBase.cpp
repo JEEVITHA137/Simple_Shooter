@@ -2,9 +2,20 @@
 
 
 #include "BTTask_ClearBlackboardBase.h"
-
+#include "BehaviorTree/BlackboardComponent.h"
 
 UBTTask_ClearBlackboardBase::UBTTask_ClearBlackboardBase() 
 {
     NodeName = TEXT("Clear Board Value");
 }
+
+EBTNodeResult::Type UBTTask_ClearBlackboardBase::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) 
+{
+    Super::ExecuteTask(OwnerComp, NodeMemory);
+
+    OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
+
+    return EBTNodeResult::Succeeded;
+}
+
+
