@@ -4,10 +4,21 @@
 #include "ShooterPlayerController.h"
 #include "Blueprint/UserWidget.h"
 
+void AShooterPlayerController::BeginPlay() 
+{
+    Super::BeginPlay();
+    HUDScreen = CreateWidget(this, HUDScreenClass);
+    if (HUDScreen != nullptr)
+    {
+            HUDScreen->AddToViewport();
+    }
+}
+
 void AShooterPlayerController::GameHasEnded(class AActor *EndGameFocus, bool bIsWinner) 
 {
-    Super::GameHasEnded(EndGameFocus, bIsWinner);
 
+    Super::GameHasEnded(EndGameFocus, bIsWinner);
+    HUDScreen->RemoveFromViewport();
     if (bIsWinner)
     {
         UUserWidget* WinScreen = CreateWidget(this, WinScreenClass);

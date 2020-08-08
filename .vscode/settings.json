@@ -1,8 +1,11 @@
 {
 	"files.exclude": {
-		"D:/unreal practise/SimpleShooter/.vscode": true,
-		"D:/unreal practise/SimpleShooter/Content": true,
-		"D:/unreal practise/SimpleShooter/Intermediate": true
-	},
-	"C_Cpp.errorSquiggles": "Disabled"
+		"D:/UnrealProjects/Simple_Shooter/.git": true,
+		"D:/UnrealProjects/Simple_Shooter/.vs": true,
+		"D:/UnrealProjects/Simple_Shooter/.vscode": true,
+		"D:/UnrealProjects/Simple_Shooter/Content": true,
+		"D:/UnrealProjects/Simple_Shooter/DerivedDataCache": true,
+		"D:/UnrealProjects/Simple_Shooter/Intermediate": true,
+		"D:/UnrealProjects/Simple_Shooter/Saved": true
+	}
 }
